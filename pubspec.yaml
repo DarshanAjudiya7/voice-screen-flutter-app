@@ -1,0 +1,56 @@
+name: voice_lock
+description: "Advanced Voice Recognition Optimization & Secure Voice Lock System"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management & DI
+  flutter_riverpod: ^2.4.9
+  get_it: ^7.6.4
+
+  # Local Storage & Security
+  flutter_secure_storage: ^9.0.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  shared_preferences: ^2.2.2
+
+  # Background Service
+  flutter_background_service: ^3.0.0
+  workmanager: ^0.5.2
+
+  # Voice & Audio
+  vosk_flutter: any
+  tflite_flutter: ^0.10.4
+  audioplayers: ^5.2.1
+  permission_handler: ^10.2.0
+
+  # UI & Animations
+  google_fonts: ^6.1.0
+  lottie: ^2.7.0
+  flutter_animate: ^4.2.0
+  glassmorphism: ^3.0.0
+  intl: ^0.19.0
+
+dependency_overrides:
+  http: ^1.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.4.7
+  hive_generator: ^2.0.1
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/models/
+    - assets/animations/
+    - assets/sounds/
